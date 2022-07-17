@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+}
+
+group 'com.xc.joy'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}

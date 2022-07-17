@@ -1,0 +1,5 @@
+rootProject.name = 'spi-demo'
+include 'api-db-impl-interface'
+include 'api-db-impl-mysql'
+include 'api-db-impl-redis'
+include 'app'

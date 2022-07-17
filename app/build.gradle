@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+description = "app"
+group 'com.xc.joy'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+// 使用 gradle 在控制台输出中文乱码解决
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+dependencies {
+    implementation(project(":api-db-impl-interface"))
+    implementation(project(":api-db-impl-mysql"))
+    implementation(project(":api-db-impl-redis"))
+}

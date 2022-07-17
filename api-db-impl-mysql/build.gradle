@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+group 'com.xc.joy'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(project(":api-db-impl-interface"))
+}
